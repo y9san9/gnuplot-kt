@@ -12,6 +12,8 @@ version = libs.versions.gnuplot.get()
 kotlin {
     explicitApi()
 
+    jvmToolchain(21)
+
     compilerOptions {
         extraWarnings = true
         allWarningsAsErrors = true
