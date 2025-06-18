@@ -1,3 +1,5 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "gnuplot-kt"
 
 dependencyResolutionManagement {
@@ -5,3 +7,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+include(":core")

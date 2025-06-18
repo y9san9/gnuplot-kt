@@ -1,9 +1,9 @@
 [versions]
 
 gnuplot = "1.0.1"
-kotlin = "2.1.20"
+kotlin = "2.0.0"
 kotlinx-coroutines = "1.10.1"
-maven-publish = "0.32.0"
+maven-publish = "0.29.0"
 
 [libraries]
 
