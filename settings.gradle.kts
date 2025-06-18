@@ -1,8 +1,7 @@
-rootProject.name = "gnuplot.kt"
+rootProject.name = "gnuplot-kt"
 
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
     }
 }
-

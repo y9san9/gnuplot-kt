@@ -1,4 +1,4 @@
-# gnuplot.kt
+# gnuplot-kt
 
 A convenient wrapper around `gnuplot` CLI Application.
 

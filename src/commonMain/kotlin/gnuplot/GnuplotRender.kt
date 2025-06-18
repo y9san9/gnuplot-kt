@@ -9,7 +9,7 @@ import gnuplot.runtime.GnuplotRuntime
  */
 public inline suspend fun tryGnuplotRender(
     runtime: GnuplotRuntime? = null,
-    block: GnuplotScope.() -> Unit
+    block: GnuplotScope.() -> Unit,
 ): Result<Unit> {
     val runtimeOrDefault = runCatching {
         runtime ?: GnuplotRuntime.default()
@@ -30,7 +30,7 @@ public inline suspend fun tryGnuplotRender(
 @Throws(GnuplotException::class)
 public inline suspend fun gnuplotRender(
     runtime: GnuplotRuntime? = null,
-    block: GnuplotScope.() -> Unit
+    block: GnuplotScope.() -> Unit,
 ) {
     val runtimeOrDefault = runtime ?: GnuplotRuntime.default()
     val scope = GnuplotScopeImpl()
