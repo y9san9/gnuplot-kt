@@ -27,7 +27,7 @@ Run `./gradlew jvmMain -PmainClass=gnuplut.MainKt` and you will get
 Code for this example is located under:
 [Main.kt](src/jvmMain/kotlin/gnuplot/Main.kt)
 
-## Using
+## Usage
 
 Library is available on Maven Central:
 
