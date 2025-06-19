@@ -7,5 +7,3 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-include(":core")

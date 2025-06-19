@@ -64,11 +64,11 @@ jobs:
       - name: Publish ${{ env.release_version }}
         run: ./gradlew publishJvmPublicationToMavenCentralRepository
 
-  # Uncomment when more platforms are added
+  # Uncomment when new platforms needed
   # deploy-js:
   #   runs-on: ubuntu-latest
   #   needs:
-  #     - gradle-check
+  #     - test-jvm
   #   steps:
   #     - uses: actions/checkout@v3
   #     - name: Gradle Cache Setup
@@ -85,7 +85,7 @@ jobs:
   # deploy-ios-x64:
   #   runs-on: macos-latest
   #   needs:
-  #     - gradle-check
+  #     - test-jvm
   #   steps:
   #     - uses: actions/checkout@v3
   #     - name: Gradle Cache Setup
@@ -107,7 +107,7 @@ jobs:
   # deploy-ios-arm64:
   #   runs-on: macos-latest
   #   needs:
-  #     - gradle-check
+  #     - test-jvm
   #   steps:
   #     - uses: actions/checkout@v3
   #     - name: Gradle Cache Setup
@@ -129,7 +129,7 @@ jobs:
   # deploy-ios-simulator-arm64:
   #   runs-on: macos-latest
   #   needs:
-  #     - gradle-check
+  #     - test-jvm
   #   steps:
   #     - uses: actions/checkout@v3
   #     - name: Gradle Cache Setup
@@ -155,7 +155,7 @@ jobs:
     needs:
       - deploy-multiplatform
       - deploy-jvm
-      # Uncomment when more platforms are added
+      # Uncomment when new platforms needed
       # - deploy-js
       # - deploy-ios-x64
       # - deploy-ios-arm64
