@@ -33,7 +33,7 @@ Library is available on Maven Central:
 
 ```gradle
 dependencies {
-    implementation("me.y9san9.gnuplot:gnuplot-kt:$version")
+    implementation("me.y9san9.gnuplot:core:$version")
 }
 ```
 

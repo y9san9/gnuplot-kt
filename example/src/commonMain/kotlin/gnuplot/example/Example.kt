@@ -1,4 +1,4 @@
-package gnuplot
+package gnuplot.example
 
 import gnuplot.runtime.GnuplotProgram
 import gnuplot.runtime.ProcessGnuplotRuntime
